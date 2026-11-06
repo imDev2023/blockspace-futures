@@ -17,3 +17,11 @@ Its argument is the SOL/USD price.
 - Landing cost = priority fee + Jito tip; the base fee is left out.
 - Run Python that reads downloaded data with `python3 -I`.
 - Issues live in GitHub Issues on imDev2023/blockspace-futures.
+
+## Multica dashboard
+
+This project is mirrored on the owner's Multica dashboard (workspace Pandora) as project `8be5f093-5079-497e-b7b3-82c9d66c3100`.
+The Multica tickets themselves are the tracker; update them directly.
+At the end of every session, run the `multica-sync` skill for this project: update ticket statuses, add any new tickets, and refresh the project's "Current step" section.
+Every Multica write passes `--no-start` and no ticket is ever assigned to an agent, so the sync never starts an agent run.
+If the `multica` CLI is not signed in, say so in the session summary and stop anyway; the sync never blocks the work.
